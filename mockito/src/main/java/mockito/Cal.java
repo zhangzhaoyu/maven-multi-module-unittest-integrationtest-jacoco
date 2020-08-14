@@ -1,4 +1,4 @@
-package cn.cincout.test;
+package mockito;
 
 import org.springframework.stereotype.Component;
 
@@ -12,9 +12,6 @@ import org.springframework.stereotype.Component;
 public class Cal {
 
     public int add(int a, int b) {
-        if (a > 100) {
-            return 0;
-        }
         return a + b;
     }
 

@@ -20,6 +20,7 @@
         <module>spring-boot</module>
         <module>spring</module>
         <module>mybatis</module>
+        <module>mockito</module>
         <module>testing</module>
     </modules>
 
@@ -118,16 +119,6 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.2</version>
                 <executions>
-                    <!-- METHOD 1 -->
-                        <!--<execution>-->
-                            <!--<id>prepare-agent</id>-->
-                            <!--<goals>-->
-                                <!--<goal>prepare-agent</goal>-->
-                            <!--</goals>-->
-                        <!--</execution>-->
-                        <!-- prepare agent for measuring unit tests -->
-
-                    <!-- METHOD 2 -->
                     <execution>
                         <id>prepare-unit-tests</id>
                         <goals>
@@ -155,3 +146,5 @@
         </plugins>
     </build>
 </project>
+
+

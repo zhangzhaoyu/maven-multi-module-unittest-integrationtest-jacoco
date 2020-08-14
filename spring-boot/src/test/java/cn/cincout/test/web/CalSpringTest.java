@@ -1,15 +1,16 @@
-package cn.cincout.test;
+package cn.cincout.test.web;
 
+import cn.cincout.test.Cal;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.SpyBean;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
 
 /**
@@ -18,10 +19,10 @@ import static org.mockito.Mockito.when;
  * @author zhaoyu
  * @sine 1.8
  */
-@ExtendWith(MockitoExtension.class)
-class CalTest {
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
+class CalSpringTest {
 
-    @Spy
+    @SpyBean
     private Cal cal; // = spy(new Cal());
 
     @BeforeEach
@@ -31,7 +32,7 @@ class CalTest {
 
     @Test
     void add() {
-        when(cal.add(anyInt(), anyInt())).thenReturn(2);
+        // when(cal.add(anyInt(), anyInt())).thenReturn(2);
         Assertions.assertEquals(2, this.cal.add(1, 1));
     }
 }

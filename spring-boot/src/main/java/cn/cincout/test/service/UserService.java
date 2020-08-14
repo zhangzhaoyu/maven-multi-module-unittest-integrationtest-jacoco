@@ -1,5 +1,7 @@
 package cn.cincout.test.service;
 
+import java.util.List;
+
 /**
  * Created by zhaoyu on 20-7-26.
  *
@@ -13,4 +15,8 @@ public interface UserService {
      * @return
      */
     User getById(int id);
+
+    void save(User user);
+
+    List<User> selectAll();
 }

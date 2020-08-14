@@ -18,17 +18,22 @@
     <dependencies>
         <dependency>
             <groupId>nl.deholtmans</groupId>
-            <artifactId>module1</artifactId>
+            <artifactId>mockito</artifactId>
             <version>${my.project.version}</version>
         </dependency>
         <dependency>
             <groupId>nl.deholtmans</groupId>
-            <artifactId>module2</artifactId>
+            <artifactId>mybatis</artifactId>
             <version>${my.project.version}</version>
         </dependency>
         <dependency>
             <groupId>nl.deholtmans</groupId>
-            <artifactId>module3</artifactId>
+            <artifactId>spring-test</artifactId>
+            <version>${my.project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>nl.deholtmans</groupId>
+            <artifactId>spring-boot-test</artifactId>
             <version>${my.project.version}</version>
         </dependency>
     </dependencies>
